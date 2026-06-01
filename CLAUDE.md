@@ -3,7 +3,8 @@
 ## 목적
 "특정 언어/DB가 아닌 보편적 AI 활용 방법론"을 소개하는 개인 자기소개 페이지.
 GitHub Pages 정적 배포 (빌드 단계 없음, 프레임워크 비종속).
-콘텐츠 언어: 한국어
+콘텐츠 언어: 한국어  
+배포 URL: https://jongh.github.io
 
 ## 핵심 원칙 (절대 위반 금지)
 1. 특정 프로그래밍 언어/프레임워크/DB/제품명을 "역량"으로 소개하지 않는다.
@@ -31,3 +32,55 @@ GitHub Pages 정적 배포 (빌드 단계 없음, 프레임워크 비종속).
 - 각 단계 완료 시 산출물 보고 → 사용자 승인 후 다음 단계 진행
 - 기존 파일 덮어쓰기 전 반드시 확인
 - 역량 소개는 항상 방법론 관점 유지
+
+---
+
+## 현재 파일 구조
+
+```
+index.html        ← 단일 페이지 (6개 섹션)
+style.css         ← 다크 테마, 반응형, 애니메이션
+main.js           ← IntersectionObserver 스크롤 fade-in
+.nojekyll         ← Jekyll 빌드 비활성화
+CLAUDE.md         ← 이 파일 (프로젝트 컨텍스트)
+README.md         ← 저장소 소개
+docs/
+  ia-spec.md      ← IA 설계 명세서 (Architect 산출물)
+  copy-draft.md   ← 카피 초안 (Writer 산출물)
+assets/image/
+  2020-06-26/     ← 기존 포스트 이미지 (미사용, 잔류)
+```
+
+## 진행 상태
+
+| 단계 | 내용 | 상태 |
+|------|------|------|
+| STEP 1 | 프로젝트 컨텍스트 설정 및 CLAUDE.md 생성 | ✅ 완료 |
+| STEP 2 | 🏛️ IA 설계 명세서 (`docs/ia-spec.md`) | ✅ 완료 · 승인됨 |
+| STEP 3 | ✍️ 카피 초안 (`docs/copy-draft.md`) | ✅ 완료 · 승인됨 |
+| STEP 4 | 🔨 정적 사이트 구현 (index.html / style.css / main.js) | ✅ 완료 |
+| STEP 5 | 🔍 검토 및 접근성·패딩·포커스 수정 | ✅ 완료 |
+| STEP 5 | GitHub Pages 배포 (master 브랜치) | ✅ 완료 |
+| STEP 6 | 사례(Case Studies) 콘텐츠 작성 | ⏳ 대기 중 |
+
+## 주요 결정 사항 (의사결정 기록)
+
+| 결정 | 내용 |
+|------|------|
+| 푸터 저작권 | 메타 서술 문구 제외 → `© 2025 JongH` 만 사용 |
+| 소셜 링크 | GitHub (`jongh`) · Instagram (`jonghyun.kim.1614`) · Email (`kjhfood@hotmail.com`) |
+| 배포 브랜치 | `master` (기존 기본 브랜치 유지) |
+| Jekyll 처리 | `.nojekyll`로 비활성화. 기존 `_posts/`, `_config.yml` 잔류하나 무해함 |
+| 사례 섹션 | STEP 6 전까지 플레이스홀더 3개 유지 |
+
+## STEP 6 진행 방법
+사용자가 실제 작업 경험 자료를 아래 형식으로 제공하면 Writer → Reviewer 순으로 처리한다.
+
+```
+[사례 제목]
+배경: 어떤 문제를 해결했는가
+과정: AI와 어떻게 협업했는가 (방법론 중심)
+결과: 무엇이 달라졌는가
+```
+
+보편성 체크리스트 (`docs/copy-draft.md` § B) 를 반드시 적용한다.

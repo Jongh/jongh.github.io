@@ -1,0 +1,12 @@
+# 작업 계획·내부 문서 — 배포 제외
+.docs/
+
+# Claude Code 로컬 도구 설정 (preview·worktree·local settings)
+.claude/
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/

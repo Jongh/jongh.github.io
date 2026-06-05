@@ -3,54 +3,258 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="특정 언어가 아닌 보편적 AI 활용 방법론을 소개하는 자기소개 페이지">
-  <title>JongH — AI와 협업하는 방식</title>
+  <meta name="description" content="김종현 — 시스템 운영과 아키텍처 설계를 아는 풀스택 개발자. 자기소개·업무 이력·주요 프로젝트와 AI 활용 방법론을 소개합니다.">
+  <title>김종현 — AI와 협업하는 풀스택 개발자</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="김종현 — AI와 협업하는 풀스택 개발자">
+  <meta property="og:description" content="시스템 운영과 아키텍처 설계를 아는 풀스택 개발자. 자기소개·업무 이력·주요 프로젝트와 AI 활용 방법론을 소개합니다.">
+  <meta property="og:url" content="https://jongh.github.io">
+  <meta property="og:image" content="https://jongh.github.io/assets/image/profile.png">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="twitter:card" content="summary">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
 
-  <!-- § 1. Hero -->
+  <!-- ====================================================
+       NAV (sticky)
+       ==================================================== -->
+  <nav class="topnav" aria-label="주요 섹션">
+    <div class="topnav-inner">
+      <a href="#hero" class="topnav-brand">김종현</a>
+      <div class="topnav-links">
+        <a href="#about">소개</a>
+        <a href="#work-history">이력</a>
+        <a href="#key-projects">프로젝트</a>
+        <a href="#ai-strengths">방법론</a>
+        <a href="#contact">연락처</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ====================================================
+       § 1. HERO
+       ==================================================== -->
   <header id="hero">
     <div class="container">
+      <span class="hero-label">김종현 · ㈜와이엠엑스 책임연구원</span>
       <h1>AI와 협업하는<br>방식을 설계합니다.</h1>
       <p class="hero-sub">
         무엇을 쓰느냐가 아니라, 어떻게 다루느냐가 역량입니다.<br>
         도구는 교체됩니다. 방식은 남습니다.
       </p>
-      <a href="#competencies" class="btn">역량 살펴보기 →</a>
+      <div class="hero-cta">
+        <a href="#key-projects" class="btn">주요 업무 보기 →</a>
+        <a href="#contact" class="btn btn--ghost">연락하기</a>
+      </div>
     </div>
   </header>
 
   <main id="main-content">
 
-  <!-- § 2. Perspective -->
-  <section id="perspective">
+  <!-- ====================================================
+       § 2. ABOUT
+       ==================================================== -->
+  <section id="about">
     <div class="container">
-      <h2 class="section-heading">왜 언어가 아니라 방식인가</h2>
-      <div class="text-block fade-in">
-        <p>"어떤 언어 쓰세요?" 라는 질문은 자연스럽습니다.<br>
-        하지만 AI와 함께 일하는 시대에 진짜 질문은 달라집니다.</p>
-        <p>언어와 도구는 매년 바뀝니다. 모델도, 플랫폼도, 생태계도 교체됩니다.<br>
-        그 속에서 지속적으로 가치를 만들어내는 것은<br>
-        "무엇을 쓰는가"가 아니라 "어떻게 다루는가"입니다.</p>
-        <p class="highlight">이 페이지는 도구 목록 대신, 방식을 소개합니다.</p>
+      <h2 class="section-heading">자기소개</h2>
+      <div class="about-layout fade-in">
+
+        <div class="avatar">
+          <img src="assets/image/profile-face.png" alt="김종현 프로필" width="160" height="160">
+        </div>
+
+        <div class="about-text">
+          <p class="about-positioning">
+            시스템의 깊이와 전체 구조를 함께 보는 풀스택 개발자.<br>
+            운영을 아는 손으로, AI 시대의 개발 방식을 다시 짭니다.
+          </p>
+          <p class="about-bg">
+            시스템 운영과 서버 스크립팅에서 출발해, API 설계와 서비스 아키텍처
+            전반을 다루는 개발자로 성장했습니다. 코드 한 줄보다 그 코드가 놓이는
+            구조에 더 관심을 가져온 결과, 지금은 마이크로서비스 기반의 풀스택
+            설계와 구현을 맡고 있습니다.
+          </p>
+          <p class="about-bg">
+            와이엠엑스에서 책임연구원으로 일하며, 단순히 기능을 구현하는 것이 아닌 운영
+            가능한 시스템을 설계하는 데 집중해왔습니다. 그 경험 위에 AI 협업
+            방법론을 더해, 더 빠르고 정확하게 복잡한 문제를 푸는 방식을
+            만들어가고 있습니다.
+          </p>
+          <p class="about-diff">
+            운영 환경을 직접 다뤄온 사람만이 아는 것이 있습니다.
+            '왜 이 구조가 문제인가'를 먼저 보고, AI에게 정확한 맥락으로 질문합니다.
+          </p>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- § 3. Competencies -->
-  <section id="competencies">
+  <!-- ====================================================
+       § 3. WORK HISTORY
+       ==================================================== -->
+  <section id="work-history">
+    <div class="container">
+      <h2 class="section-heading">업무 이력</h2>
+      <p class="section-sub">다양한 도메인과 규모의 시스템을 설계하고 구축해 온 경력입니다.</p>
+
+      <div class="timeline">
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-org">㈜와이엠엑스</span>
+              <span class="timeline-period">2020.06 — 현재</span>
+            </div>
+            <p class="timeline-role">책임연구원 · 풀스택 개발 / 아키텍처 설계</p>
+            <p class="timeline-contribution">
+              → 삼성·LG·HD현대 등 대기업 및 공공기관 다수 프로젝트에서
+              마이크로서비스 기반 백엔드 아키텍처를 설계하고,
+              디지털트윈·메타버스·실시간 서버 개발을 주도했습니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-org">㈜레이다앤스페이스</span>
+              <span class="timeline-period">2018.05 — 2020.05</span>
+            </div>
+            <p class="timeline-role">연구원 · 서버 개발 / 데이터 처리 시스템</p>
+            <p class="timeline-contribution">
+              → 위성영상 관리 시스템, 우주전파 실시간 검증 시스템 등
+              과학 데이터를 수집·분석·표출하는 서버 파이프라인을 설계하고 구축했습니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-org">㈜에스이랩</span>
+              <span class="timeline-period">2013.02 — 2018.02</span>
+            </div>
+            <p class="timeline-role">개발자 · 기상·위성·천문 도메인 시스템 개발</p>
+            <p class="timeline-contribution">
+              → 기상청·한국천문연구원·우주전파센터 등 국가 기관 프로젝트에서
+              데이터 수집·처리·시각화 시스템을 개발하며 과학기술 도메인 개발 역량을 축적했습니다.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       § 4. KEY PROJECTS
+       ==================================================== -->
+  <section id="key-projects">
     <div class="container container--wide">
-      <h2 class="section-heading">보편적 AI 협업 역량</h2>
-      <p class="section-sub">어떤 AI를 쓰든, 어떤 도메인에서 일하든 적용되는 협업의 원칙들입니다.</p>
+      <h2 class="section-heading">주요 업무</h2>
+      <p class="section-sub">실제 업무에서 시스템 설계와 구조적 문제 해결 역량이 발휘된 대표 사례입니다.</p>
+
+      <div class="projects-grid">
+
+        <article class="project-card fade-in">
+          <div class="project-tags">
+            <span class="tag">작업 분해</span>
+            <span class="tag">컨텍스트 엔지니어링</span>
+          </div>
+          <h3>중소조선연구원 DX센터 디지털트윈 S/W 구축</h3>
+          <div class="project-section">
+            <span class="project-label">배경</span>
+            <p>조선 생산 현장의 디지털 전환 수요에 따라, 물리적 설비와 공정을
+            가상 환경에 실시간으로 연동하는 디지털트윈 플랫폼 구축이 필요했습니다.</p>
+          </div>
+          <div class="project-section">
+            <span class="project-label">방법</span>
+            <p>저작도구 연결·실시간 데이터 스트림·아키텍처 설계를 독립 서비스
+            단위로 분해하고, 레이어 간 인터페이스를 사전 명세화하여 병렬 개발과
+            통합을 체계적으로 진행했습니다. 반복 작업은 AI 보조 도구로 가속하여
+            설계 품질과 속도를 동시에 확보했습니다.</p>
+          </div>
+          <div class="project-result">
+            아키텍처 구조 확정 및 핵심 파이프라인 개발 진행 중 / 저작도구—디지털트윈 실시간 연동 구조 검증 완료
+          </div>
+        </article>
+
+        <article class="project-card fade-in">
+          <div class="project-tags">
+            <span class="tag">역할 분업</span>
+            <span class="tag">재사용 자산화</span>
+          </div>
+          <h3>삼성 E&amp;A ARMS 자동화 시스템 구축</h3>
+          <div class="project-section">
+            <span class="project-label">배경</span>
+            <p>대규모 엔지니어링 자산 관리가 수작업에 의존하고 있어, 관리 효율을
+            높이고 유관 부서 간 데이터 흐름을 자동화할 시스템이 필요했습니다.</p>
+          </div>
+          <div class="project-section">
+            <span class="project-label">방법</span>
+            <p>관리자 인터페이스·데이터 처리 서버·부서 간 인터페이스를 역할 단위로
+            분리 설계하고, 공통 데이터 규격을 중앙화하여 연동 비용을 최소화했습니다.
+            재사용 가능한 공통 모듈로 구조화해 유지보수 부담을 줄였습니다.</p>
+          </div>
+          <div class="project-result">
+            4년 이상 운영된 안정적 자동화 시스템 / 다수 유관 부서 연동 완료
+          </div>
+        </article>
+
+        <article class="project-card fade-in">
+          <div class="project-tags">
+            <span class="tag">작업 분해</span>
+            <span class="tag">검증·승인 게이트</span>
+          </div>
+          <h3>LG 에너지솔루션 Virtual Training Simulator 구축</h3>
+          <div class="project-section">
+            <span class="project-label">배경</span>
+            <p>제조 현장 인력의 반복 교육을 실제 설비 없이 수행할 수 있는
+            가상 훈련 시스템과, 현장 배포를 자동화하는 운영 체계가 필요했습니다.</p>
+          </div>
+          <div class="project-section">
+            <span class="project-label">방법</span>
+            <p>실시간 서버·WAS·자동 업데이트 모듈을 독립 단위로 분해하고,
+            단계별 통합 테스트 게이트를 두어 각 레이어를 순차적으로 검증한 뒤
+            전체 시스템을 완성했습니다.</p>
+          </div>
+          <div class="project-result">
+            3년 이상 안정 운영된 VTS 플랫폼 / 자동 업데이트 체계로 현장 배포 비용 절감
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       § 5. AI STRENGTHS
+       ==================================================== -->
+  <section id="ai-strengths">
+    <div class="container container--wide">
+      <h2 class="section-heading">AI 활용 방법론</h2>
+      <p class="section-sub">어떤 AI를 쓰든, 어떤 도메인에서 일하든 적용되는 7가지 협업 원칙입니다. 각 방법론이 무엇이고, 실제로 어떻게 적용했는지를 정리했습니다.</p>
       <div class="grid">
 
         <article class="card fade-in">
           <span class="num">01</span>
           <h3>컨텍스트 엔지니어링</h3>
           <p class="def">AI가 올바른 판단을 내리도록 배경·제약·목표를 구조화된 언어로 설계합니다.</p>
+          <p class="evidence">디지털트윈 프로젝트에서 시스템 요구사항·제약·인터페이스 규격을 구조화된 문서로 정리해 AI에 전달함으로써, API 설계 초안을 반복 없이 빠르게 도출했습니다.</p>
           <p class="effect">반복 수정 없이 첫 시도에서 원하는 결과를 얻는 효율을 확보합니다.</p>
         </article>
 
@@ -58,6 +262,7 @@
           <span class="num">02</span>
           <h3>작업 분해</h3>
           <p class="def">복잡한 목표를 AI가 처리 가능한 최소 단위로 나누고 실행 순서를 설계합니다.</p>
+          <p class="evidence">삼성 ARMS 프로젝트에서 관리자 페이지·데이터 서버·부서 인터페이스를 독립 단위로 분해해 역할별 개발을 병렬로 진행하고, 4년 이상 안정 운영 가능한 구조를 만들었습니다.</p>
           <p class="effect">대형 프로젝트도 예측 가능한 단계로 진행되어 품질 관리가 가능해집니다.</p>
         </article>
 
@@ -65,6 +270,7 @@
           <span class="num">03</span>
           <h3>역할 분업</h3>
           <p class="def">여러 AI 에이전트 또는 페르소나에 역할을 배분하고 각각의 출력을 하나의 결과물로 통합합니다.</p>
+          <p class="evidence">디지털트윈 개발에서 아키텍처 설계·코드 초안 생성·코드 리뷰 역할을 AI와 명확히 나눠 진행해, 혼자서도 여러 전문 시각을 결합한 결과물을 만들어가고 있습니다.</p>
           <p class="effect">단일 모델의 한계를 넘어 전문화된 시각들이 수렴된 결과를 만듭니다.</p>
         </article>
 
@@ -72,6 +278,7 @@
           <span class="num">04</span>
           <h3>검증·승인 게이트</h3>
           <p class="def">AI 출력물이 다음 단계로 넘어가기 전 사람의 판단이 개입하는 체크포인트를 설계합니다.</p>
+          <p class="evidence">LG VTS 구축 시 실시간 서버·WAS·업데이트 모듈을 각각 독립 검증한 뒤 통합하는 단계 게이트를 설계해, 최종 배포 전 오류를 레이어 단위에서 조기에 발견했습니다.</p>
           <p class="effect">오류가 누적되기 전에 조기 발견되어 전체 재작업 비용이 최소화됩니다.</p>
         </article>
 
@@ -79,6 +286,7 @@
           <span class="num">05</span>
           <h3>검증 루프</h3>
           <p class="def">AI가 스스로 자신의 출력을 기준에 따라 반복적으로 검토하고 수정하는 프로세스를 설계합니다.</p>
+          <p class="evidence">API 서버 개발 시 AI가 생성한 인터페이스 명세를 사전 정의한 체크리스트 기준으로 스스로 재검토하도록 프롬프트를 구성해, 수작업 리뷰 횟수를 줄였습니다.</p>
           <p class="effect">사람의 개입 없이도 일정 수준 이상의 품질이 자동으로 보장됩니다.</p>
         </article>
 
@@ -86,6 +294,7 @@
           <span class="num">06</span>
           <h3>의사결정 기록</h3>
           <p class="def">AI와의 협업 과정에서 내려진 판단 근거를 구조화된 형태로 추적하고 보존합니다.</p>
+          <p class="evidence">MSA 아키텍처 설계 과정에서 구조적 결정과 그 근거를 문서화해 팀 내 반복 논의를 없애고, 신규 투입 인원이 맥락을 빠르게 파악할 수 있는 환경을 만들었습니다.</p>
           <p class="effect">유사한 문제가 다시 발생했을 때 동일한 사고 경로를 재현하거나 오류 원인을 빠르게 파악합니다.</p>
         </article>
 
@@ -93,6 +302,7 @@
           <span class="num">07</span>
           <h3>재사용 자산화</h3>
           <p class="def">반복 사용 가능한 프롬프트·템플릿·컨텍스트 블록으로 협업 결과를 구조화합니다.</p>
+          <p class="evidence">ARMS·VTS 등 다수 프로젝트에서 공통 데이터 인터페이스 모듈을 구조화해 유관 부서 연동 때마다 초기 개발 비용을 반복적으로 줄였습니다.</p>
           <p class="effect">새 프로젝트를 시작할 때 초기 비용이 줄고 품질의 일관성이 높아집니다.</p>
         </article>
 
@@ -100,91 +310,70 @@
     </div>
   </section>
 
-  <!-- § 4. Workflow -->
+  <!-- ====================================================
+       § 6. WORKFLOW
+       ==================================================== -->
   <section id="workflow">
     <div class="container container--wide">
-      <h2 class="section-heading">AI 협업 파이프라인</h2>
-      <p class="section-sub">역량은 독립적으로 존재하지 않습니다. 설계부터 배포까지 각 단계에서 맞물려 작동합니다.</p>
-      <div class="pipeline fade-in">
+      <h2 class="section-heading">AI 협업 방식</h2>
+      <p class="section-sub">앞의 7가지 방법론은 따로 노는 것이 아닙니다. 실제 프로젝트에서는 아래 네 단계의 흐름으로 맞물려 작동합니다.</p>
 
-        <div class="step">
-          <div class="step-head">
-            <span class="step-icon" aria-hidden="true">🏛️</span>
-            <span class="step-name">설계</span>
-          </div>
-          <ul class="step-tags">
-            <li>01 컨텍스트 엔지니어링</li>
-            <li>02 작업 분해</li>
+      <div class="workflow-grid">
+
+        <article class="workflow-card fade-in">
+          <span class="num">01</span>
+          <h3>설계</h3>
+          <p class="workflow-desc">목표와 제약을 명확히 정의하고, AI가 올바른 판단을 내릴 수 있도록 작업 구조를 설계합니다.</p>
+          <ul class="workflow-tags">
+            <li>컨텍스트 엔지니어링</li>
+            <li>작업 분해</li>
           </ul>
-        </div>
-
-        <span class="arrow" aria-hidden="true">→</span>
-
-        <div class="step">
-          <div class="step-head">
-            <span class="step-icon" aria-hidden="true">🔨</span>
-            <span class="step-name">구현</span>
-          </div>
-          <ul class="step-tags">
-            <li>03 역할 분업</li>
-            <li>07 재사용 자산화</li>
-          </ul>
-        </div>
-
-        <span class="arrow" aria-hidden="true">→</span>
-
-        <div class="step">
-          <div class="step-head">
-            <span class="step-icon" aria-hidden="true">🔍</span>
-            <span class="step-name">검토</span>
-          </div>
-          <ul class="step-tags">
-            <li>04 검증·승인 게이트</li>
-            <li>05 검증 루프</li>
-          </ul>
-        </div>
-
-        <span class="arrow" aria-hidden="true">→</span>
-
-        <div class="step">
-          <div class="step-head">
-            <span class="step-icon" aria-hidden="true">🚀</span>
-            <span class="step-name">배포</span>
-          </div>
-          <ul class="step-tags">
-            <li>06 의사결정 기록</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- § 5. Cases (placeholder — STEP 6에서 채움) -->
-  <section id="cases">
-    <div class="container container--wide">
-      <h2 class="section-heading">협업 사례</h2>
-      <p class="section-sub">실제 작업에서 위 역량들이 어떻게 적용되었는지 소개합니다.</p>
-      <div class="cases-grid">
-        <article class="case-placeholder">
-          <span class="coming-soon">준비 중</span>
-          <p>사례가 곧 추가됩니다.</p>
         </article>
-        <article class="case-placeholder">
-          <span class="coming-soon">준비 중</span>
-          <p>사례가 곧 추가됩니다.</p>
+
+        <span class="workflow-arrow" aria-hidden="true">→</span>
+
+        <article class="workflow-card fade-in">
+          <span class="num">02</span>
+          <h3>구현</h3>
+          <p class="workflow-desc">역할을 분리한 AI와 협력하며, 반복 가능한 자산을 만들어가면서 결과물을 완성합니다.</p>
+          <ul class="workflow-tags">
+            <li>역할 분업</li>
+            <li>재사용 자산화</li>
+          </ul>
         </article>
-        <article class="case-placeholder">
-          <span class="coming-soon">준비 중</span>
-          <p>사례가 곧 추가됩니다.</p>
+
+        <span class="workflow-arrow" aria-hidden="true">→</span>
+
+        <article class="workflow-card fade-in">
+          <span class="num">03</span>
+          <h3>검토</h3>
+          <p class="workflow-desc">사람의 판단이 개입하는 승인 게이트와 AI의 자기 검증 루프로 품질을 이중으로 보장합니다.</p>
+          <ul class="workflow-tags">
+            <li>검증·승인 게이트</li>
+            <li>검증 루프</li>
+          </ul>
         </article>
+
+        <span class="workflow-arrow" aria-hidden="true">→</span>
+
+        <article class="workflow-card fade-in">
+          <span class="num">04</span>
+          <h3>기록</h3>
+          <p class="workflow-desc">협업 과정에서 내려진 판단의 근거를 구조화해 보존하고, 다음 프로젝트의 출발점으로 삼습니다.</p>
+          <ul class="workflow-tags">
+            <li>의사결정 기록</li>
+          </ul>
+        </article>
+
       </div>
     </div>
   </section>
 
   </main>
 
-  <!-- § 6. Footer -->
+  <!-- ====================================================
+       § 7. CONTACT / FOOTER
+       ==================================================== -->
   <footer id="contact">
     <div class="container">
       <p class="footer-cta">함께 논의하고 싶은 주제가 있다면 언제든 연락해 주세요.</p>
@@ -211,7 +400,7 @@
           이메일
         </a>
       </div>
-      <p class="footer-copy">© 2025 JongH</p>
+      <p class="footer-copy">© 2026 김종현</p>
     </div>
   </footer>
 

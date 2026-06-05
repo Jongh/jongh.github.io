@@ -204,9 +204,40 @@ header, section {
 }
 .btn--ghost:hover { background: var(--accent-a); transform: translateY(-2px); }
 
+/* === STATS BAND === */
+.stats-band {
+  background: var(--surface);
+  padding: clamp(2.5rem, 5vw, 3.5rem) 0;
+}
+.stats-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.stat-num {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.stat-unit { font-size: 0.5em; font-weight: 700; margin-left: 1px; }
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--text-2);
+  font-weight: 600;
+}
+
 /* === ABOUT === */
 #about {
-  background: var(--surface);
+  background: var(--bg);
 }
 
 .about-layout {
@@ -271,7 +302,7 @@ header, section {
 
 /* === WORK HISTORY === */
 #work-history {
-  background: var(--bg);
+  background: var(--surface);
 }
 
 .timeline {
@@ -309,12 +340,12 @@ header, section {
   height: 9px;
   border-radius: 50%;
   background: var(--accent);
-  border: 2px solid var(--bg);
+  border: 2px solid var(--surface);
   flex-shrink: 0;
 }
 
 .timeline-card {
-  background: var(--surface);
+  background: var(--bg);
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 1.5rem;
@@ -359,6 +390,31 @@ header, section {
   color: var(--text-2);
   line-height: 1.65;
 }
+
+/* === DOMAINS === */
+#domains {
+  background: var(--bg);
+}
+.domain-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.domain {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.domain:hover { border-color: var(--accent); transform: translateY(-3px); }
+.domain-icon { font-size: 1.5rem; line-height: 1; }
+.domain-name { font-weight: 700; font-size: 1rem; color: var(--text-1); }
+.domain-desc { font-size: 0.85rem; color: var(--text-2); line-height: 1.5; }
 
 /* === KEY PROJECTS === */
 #key-projects {
@@ -590,6 +646,10 @@ footer {
   margin-bottom: 1.5rem;
 }
 
+.footer-resume {
+  margin-bottom: 1.75rem;
+}
+
 .footer-links {
   display: flex;
   justify-content: center;
@@ -681,7 +741,12 @@ footer {
   }
 }
 
+@media (max-width: 560px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); row-gap: 1.75rem; }
+}
+
 @media (max-width: 500px) {
   .grid          { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
+  .domain-grid   { grid-template-columns: 1fr 1fr; }
 }

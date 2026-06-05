@@ -15,9 +15,12 @@
   <meta property="og:title" content="김종현 — AI와 협업하는 풀스택 개발자">
   <meta property="og:description" content="시스템 운영과 아키텍처 설계를 아는 풀스택 개발자. 자기소개·업무 이력·주요 프로젝트와 AI 활용 방법론을 소개합니다.">
   <meta property="og:url" content="https://jongh.github.io">
-  <meta property="og:image" content="https://jongh.github.io/assets/image/profile.png">
+  <meta property="og:image" content="https://jongh.github.io/assets/image/og-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:locale" content="ko_KR">
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://jongh.github.io/assets/image/og-card.png">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -54,12 +57,26 @@
       </p>
       <div class="hero-cta">
         <a href="#key-projects" class="btn">주요 업무 보기 →</a>
-        <a href="#contact" class="btn btn--ghost">연락하기</a>
+        <a href="assets/resume/Kim-Jong-Hyeon-Resume.pdf" class="btn btn--ghost" download="김종현_이력서.pdf">이력서 다운로드 ↓</a>
       </div>
     </div>
   </header>
 
   <main id="main-content">
+
+  <!-- ====================================================
+       § STATS — 숫자로 보는 경력
+       ==================================================== -->
+  <section id="stats" class="stats-band">
+    <div class="container container--wide">
+      <ul class="stats-grid fade-in">
+        <li class="stat"><span class="stat-num">13<span class="stat-unit">년+</span></span><span class="stat-label">개발 경력</span></li>
+        <li class="stat"><span class="stat-num">20<span class="stat-unit">건+</span></span><span class="stat-label">수행 프로젝트</span></li>
+        <li class="stat"><span class="stat-num">7<span class="stat-unit">개+</span></span><span class="stat-label">산업 도메인</span></li>
+        <li class="stat"><span class="stat-num">4<span class="stat-unit">년+</span></span><span class="stat-label">최장 운영 시스템</span></li>
+      </ul>
+    </div>
+  </section>
 
   <!-- ====================================================
        § 2. ABOUT
@@ -119,7 +136,7 @@
             </div>
             <p class="timeline-role">책임연구원 · 풀스택 개발 / 아키텍처 설계</p>
             <p class="timeline-contribution">
-              → 삼성·LG·HD현대 등 대기업 및 공공기관 다수 프로젝트에서
+              → 대기업 및 공공기관의 다수 프로젝트에서
               마이크로서비스 기반 백엔드 아키텍처를 설계하고,
               디지털트윈·메타버스·실시간 서버 개발을 주도했습니다.
             </p>
@@ -150,13 +167,33 @@
             </div>
             <p class="timeline-role">개발자 · 기상·위성·천문 도메인 시스템 개발</p>
             <p class="timeline-contribution">
-              → 기상청·한국천문연구원·우주전파센터 등 국가 기관 프로젝트에서
+              → 기상·천문·우주 분야 국가 연구기관 프로젝트에서
               데이터 수집·처리·시각화 시스템을 개발하며 과학기술 도메인 개발 역량을 축적했습니다.
             </p>
           </div>
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       § DOMAINS — 도메인·산업 경험 맵
+       ==================================================== -->
+  <section id="domains">
+    <div class="container container--wide">
+      <h2 class="section-heading">도메인·산업 경험</h2>
+      <p class="section-sub">특정 산업에 갇히지 않고, 새로운 도메인의 문제를 빠르게 이해하여 시스템으로 풀어 왔습니다.</p>
+      <ul class="domain-grid fade-in">
+        <li class="domain"><span class="domain-icon" aria-hidden="true">🚢</span><span class="domain-name">조선·중공업</span><span class="domain-desc">디지털트윈 생산 플랫폼</span></li>
+        <li class="domain"><span class="domain-icon" aria-hidden="true">🚄</span><span class="domain-name">철도</span><span class="domain-desc">정비 공정 메타버스 · 예측 API</span></li>
+        <li class="domain"><span class="domain-icon" aria-hidden="true">🔋</span><span class="domain-name">에너지·제조</span><span class="domain-desc">가상 훈련 시뮬레이터</span></li>
+        <li class="domain"><span class="domain-icon" aria-hidden="true">🏭</span><span class="domain-name">엔지니어링</span><span class="domain-desc">대규모 자산관리 자동화</span></li>
+        <li class="domain"><span class="domain-icon" aria-hidden="true">🛰️</span><span class="domain-name">위성·천문</span><span class="domain-desc">위성영상 · 우주감시 시스템</span></li>
+        <li class="domain"><span class="domain-icon" aria-hidden="true">🌤️</span><span class="domain-name">기상</span><span class="domain-desc">기상 빅데이터 처리·표출</span></li>
+        <li class="domain"><span class="domain-icon" aria-hidden="true">📡</span><span class="domain-name">우주전파</span><span class="domain-desc">실시간 관측·검증 시스템</span></li>
+        <li class="domain"><span class="domain-icon" aria-hidden="true">🌐</span><span class="domain-name">메타버스</span><span class="domain-desc">실시간 멀티서버 협업 서비스</span></li>
+      </ul>
     </div>
   </section>
 
@@ -175,7 +212,7 @@
             <span class="tag">작업 분해</span>
             <span class="tag">컨텍스트 엔지니어링</span>
           </div>
-          <h3>중소조선연구원 DX센터 디지털트윈 S/W 구축</h3>
+          <h3>조선 생산기술 디지털트윈 S/W 플랫폼 구축</h3>
           <div class="project-section">
             <span class="project-label">배경</span>
             <p>조선 생산 현장의 디지털 전환 수요에 따라, 물리적 설비와 공정을
@@ -198,7 +235,7 @@
             <span class="tag">역할 분업</span>
             <span class="tag">재사용 자산화</span>
           </div>
-          <h3>삼성 E&amp;A ARMS 자동화 시스템 구축</h3>
+          <h3>대규모 엔지니어링 자산관리 자동화 시스템 구축</h3>
           <div class="project-section">
             <span class="project-label">배경</span>
             <p>대규모 엔지니어링 자산 관리가 수작업에 의존하고 있어, 관리 효율을
@@ -220,7 +257,7 @@
             <span class="tag">작업 분해</span>
             <span class="tag">검증·승인 게이트</span>
           </div>
-          <h3>LG 에너지솔루션 Virtual Training Simulator 구축</h3>
+          <h3>제조 현장 가상 훈련 시뮬레이터(VTS) 구축</h3>
           <div class="project-section">
             <span class="project-label">배경</span>
             <p>제조 현장 인력의 반복 교육을 실제 설비 없이 수행할 수 있는
@@ -262,7 +299,7 @@
           <span class="num">02</span>
           <h3>작업 분해</h3>
           <p class="def">복잡한 목표를 AI가 처리 가능한 최소 단위로 나누고 실행 순서를 설계합니다.</p>
-          <p class="evidence">삼성 ARMS 프로젝트에서 관리자 페이지·데이터 서버·부서 인터페이스를 독립 단위로 분해해 역할별 개발을 병렬로 진행하고, 4년 이상 안정 운영 가능한 구조를 만들었습니다.</p>
+          <p class="evidence">대규모 자산관리 자동화 프로젝트에서 관리자 페이지·데이터 서버·부서 인터페이스를 독립 단위로 분해해 역할별 개발을 병렬로 진행하고, 4년 이상 안정 운영 가능한 구조를 만들었습니다.</p>
           <p class="effect">대형 프로젝트도 예측 가능한 단계로 진행되어 품질 관리가 가능해집니다.</p>
         </article>
 
@@ -278,7 +315,7 @@
           <span class="num">04</span>
           <h3>검증·승인 게이트</h3>
           <p class="def">AI 출력물이 다음 단계로 넘어가기 전 사람의 판단이 개입하는 체크포인트를 설계합니다.</p>
-          <p class="evidence">LG VTS 구축 시 실시간 서버·WAS·업데이트 모듈을 각각 독립 검증한 뒤 통합하는 단계 게이트를 설계해, 최종 배포 전 오류를 레이어 단위에서 조기에 발견했습니다.</p>
+          <p class="evidence">가상 훈련 시뮬레이터 구축 시 실시간 서버·WAS·업데이트 모듈을 각각 독립 검증한 뒤 통합하는 단계 게이트를 설계해, 최종 배포 전 오류를 레이어 단위에서 조기에 발견했습니다.</p>
           <p class="effect">오류가 누적되기 전에 조기 발견되어 전체 재작업 비용이 최소화됩니다.</p>
         </article>
 
@@ -302,7 +339,7 @@
           <span class="num">07</span>
           <h3>재사용 자산화</h3>
           <p class="def">반복 사용 가능한 프롬프트·템플릿·컨텍스트 블록으로 협업 결과를 구조화합니다.</p>
-          <p class="evidence">ARMS·VTS 등 다수 프로젝트에서 공통 데이터 인터페이스 모듈을 구조화해 유관 부서 연동 때마다 초기 개발 비용을 반복적으로 줄였습니다.</p>
+          <p class="evidence">여러 자동화·시뮬레이터 프로젝트에서 공통 데이터 인터페이스 모듈을 구조화해 유관 부서 연동 때마다 초기 개발 비용을 반복적으로 줄였습니다.</p>
           <p class="effect">새 프로젝트를 시작할 때 초기 비용이 줄고 품질의 일관성이 높아집니다.</p>
         </article>
 
@@ -377,20 +414,13 @@
   <footer id="contact">
     <div class="container">
       <p class="footer-cta">함께 논의하고 싶은 주제가 있다면 언제든 연락해 주세요.</p>
+      <a href="assets/resume/Kim-Jong-Hyeon-Resume.pdf" class="btn footer-resume" download="김종현_이력서.pdf">이력서 다운로드 (PDF) ↓</a>
       <div class="footer-links">
         <a href="https://github.com/jongh" class="footer-link" target="_blank" rel="noopener noreferrer">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M12 .5C5.648.5.5 5.648.5 12c0 5.084 3.292 9.388 7.861 10.907.575.106.785-.25.785-.555 0-.274-.01-1.157-.015-2.098-3.2.694-3.874-1.544-3.874-1.544-.523-1.329-1.277-1.683-1.277-1.683-1.044-.714.08-.699.08-.699 1.154.08 1.761 1.184 1.761 1.184 1.026 1.758 2.692 1.25 3.347.956.104-.743.401-1.25.73-1.537-2.554-.29-5.24-1.277-5.24-5.683 0-1.256.45-2.282 1.182-3.087-.118-.29-.512-1.46.112-3.044 0 0 .964-.308 3.158 1.177.916-.255 1.9-.382 2.874-.386.975.004 1.96.131 2.876.386 2.193-1.485 3.155-1.177 3.155-1.177.626 1.584.232 2.754.114 3.044.735.805 1.18 1.831 1.18 3.087 0 4.417-2.69 5.39-5.252 5.674.413.355.782 1.057.782 2.13 0 1.538-.014 2.776-.014 3.153 0 .308.207.667.79.554C20.21 21.385 23.5 17.082 23.5 12 23.5 5.648 18.352.5 12 .5z"/>
           </svg>
           GitHub
-        </a>
-        <a href="https://instagram.com/jonghyun.kim.1614" class="footer-link" target="_blank" rel="noopener noreferrer">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-          </svg>
-          Instagram
         </a>
         <a href="mailto:kjhfood@hotmail.com" class="footer-link">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">

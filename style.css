@@ -290,6 +290,23 @@ header, section {
   line-height: 1.75;
 }
 
+.role-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: -0.25rem 0 0.25rem;
+}
+.role-tags li {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--accent-a);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.3rem 0.8rem;
+}
+
 .about-diff {
   font-size: 0.95rem;
   font-weight: 600;
@@ -298,6 +315,22 @@ header, section {
   background: var(--accent-a);
   border-radius: 0 6px 6px 0;
   color: var(--text-1);
+}
+
+.about-cert {
+  font-size: 0.875rem;
+  color: var(--text-2);
+}
+.about-cert-label {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  background: var(--accent-a);
+  border-radius: 4px;
+  padding: 0.15rem 0.45rem;
+  margin-right: 0.5rem;
 }
 
 /* === WORK HISTORY === */
@@ -389,6 +422,38 @@ header, section {
   font-size: 0.875rem;
   color: var(--text-2);
   line-height: 1.65;
+}
+
+.timeline-summary {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-1);
+  line-height: 1.55;
+  margin-bottom: 0.6rem;
+}
+
+.timeline-points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-top: 0.2rem;
+}
+.timeline-points li {
+  position: relative;
+  padding-left: 0.95rem;
+  font-size: 0.875rem;
+  color: var(--text-2);
+  line-height: 1.6;
+}
+.timeline-points li::before {
+  content: "·";
+  position: absolute;
+  left: 0.1rem;
+  top: -0.05rem;
+  color: var(--accent);
+  font-weight: 800;
+  font-size: 1.1rem;
 }
 
 /* === DOMAINS === */

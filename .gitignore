@@ -4,6 +4,14 @@
 # Claude Code 로컬 도구 설정 (preview·worktree·local settings)
 .claude/
 
+# tide 로컬 상태 파일 (커밋 대상 아님 — .tide/deps 는 커밋 가능)
+.tide/phase
+
+# tide 내부 산출물 — GitHub Pages(.nojekyll)가 docs/ 전체를 공개 서빙하므로
+# 비공개 유지를 위해 커밋·배포에서 제외 (로컬 세션 작업에는 영향 없음)
+docs/milestones/
+docs/reports/
+
 # macOS
 .DS_Store
 

@@ -628,6 +628,40 @@ header, section {
   line-height: 1.6;
 }
 
+/* === SELF-REFERENTIAL PROOF (#ai-strengths) === */
+.self-proof-callout {
+  max-width: var(--w);
+  margin: 0.5rem 0 2rem;
+  padding: 0.9rem 1.1rem;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--text-1);
+  background: var(--accent-a);
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+}
+.self-proof-callout strong {
+  color: var(--text-1);     /* WCAG AA: accent gold on tinted beige < 4.5:1 → 진한 브라운으로 대비 확보 */
+  font-weight: 700;
+}
+
+.evidence--self {
+  background: var(--accent-a);
+  border-left: 3px solid var(--accent);
+}
+.evidence--self strong {
+  color: var(--text-1);     /* WCAG AA 대비 확보 (위 .self-proof-callout strong과 동일 사유) */
+  font-weight: 700;
+}
+.evidence--self code {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.78rem;
+  color: var(--text-1);
+  background: rgba(154, 111, 46, 0.14);
+  padding: 0.05rem 0.3rem;
+  border-radius: 3px;
+}
+
 /* === WORKFLOW === */
 #workflow {
   background: var(--surface);

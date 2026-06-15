@@ -68,3 +68,9 @@ GitHub Pages — `master` 브랜치 루트(`/`)에서 직접 서빙
 
 - GitHub: [github.com/jongh](https://github.com/jongh)
 - Email: [kjhfood@hotmail.com](mailto:kjhfood@hotmail.com)
+
+---
+
+## CHANGELOG
+
+변경 이력은 [`CHANGELOG.md`](CHANGELOG.md)를 참고하세요.

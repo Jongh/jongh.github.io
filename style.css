@@ -11,7 +11,7 @@
   --surface:   #F0EBE0;                  /* 연한 베이지 — 카드·강조 섹션 */
   --surface-2: #E6DDD0;                  /* 중간 베이지 — 푸터·호버 */
   --text-1:    #2C2417;                  /* 다크 브라운 — 주요 텍스트 */
-  --text-2:    #7A6A50;                  /* 미디엄 브라운 — 보조 텍스트 */
+  --text-2:    #6F5F42;                  /* 미디엄 브라운 — 보조 텍스트(WCAG AA 전배경: surface 5.21·bg 5.79·surface-2 4.61:1) */
   --accent:    #9A6F2E;                  /* 앰버/골드 — 버튼·번호·링크(장식/대형 3:1 기준) */
   --accent-text: #85601E;                /* 진한 골드 — 라이트 배경 위 본문 텍스트 전용(WCAG AA, surface 위 4.79:1·bg 위 5.33:1) */
   --accent-a:  rgba(154, 111, 46, 0.10); /* 앰버 틴트 — 태그·하이라이트 배경 */
@@ -608,7 +608,7 @@ header, section {
 
 .def {
   font-size: 0.875rem;
-  color: #6A5A42;          /* 카드 본문 한정 진한 브라운 — surface 위 5.60:1 (전역 --text-2 미수정, 회귀 방지) */
+  color: var(--text-2);
   line-height: 1.65;
 }
 

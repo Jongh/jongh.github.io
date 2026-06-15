@@ -141,6 +141,7 @@ assets/resume/
 | 이력서 다운로드 | 웹 공개용 PDF(`assets/resume/`) — 전화번호 제거·고객사명 일반화. 히어로/푸터에 다운로드 버튼. 원본(전화·실명 포함) PDF는 비공개 로컬 보관 |
 | OG 썸네일 | 전용 카드(`og-card.png`, 1200×630) 생성 → og:image 교체, twitter:card=summary_large_image |
 | #ai-strengths·#workflow 자기참조 실증 | 두 섹션의 실증을 이 저장소의 AI 개발 사이클로 자기참조 보강. 특정 도구/제품명은 미표기, 방법론 관점으로만 추상화 (2026-06-15) |
+| 카피 SSOT 역할 | 배포 카피의 사실상 SSOT는 index.html. docs/copy-draft.md는 릴리즈 시점 스냅샷으로, 드리프트는 버그가 아니라 스냅샷 시점 차이. 릴리즈 단계에서 필요 시 동기화 (2026-06-15) |
 
 ## 콘텐츠 입력 형식 (M5 진행 시)
 

@@ -298,7 +298,7 @@
     <div class="container container--wide">
       <h2 class="section-heading">AI 활용 방법론</h2>
       <p class="section-sub">어떤 AI를 쓰든, 어떤 도메인에서 일하든 적용되는 7가지 협업 원칙입니다. 각 방법론이 무엇이고, 실제로 어떻게 적용했는지를 정리했습니다.</p>
-      <p class="self-proof-callout">사실 이 페이지도 아래 7가지 방법론으로 만들었습니다. 각 카드의 <strong>이 저장소에서의 실증</strong>이 그 흔적입니다.</p>
+      <p class="self-proof-callout">사실 이 페이지도 아래 7가지 방법론으로 만들었습니다. 각 카드의 <strong>이 저장소에서의 실증</strong>이 그 흔적입니다. 첫 세 사이클 동안 세 번 배포하는 사이 배포를 막은 문제는 한 건도 없었고, 검토와 구현 중에 나온 후속 과제 6건도 모두 마무리해 다음으로 미룬 일이 남지 않았습니다. 배포마다 바뀐 내용은 공개된 <a href="https://github.com/Jongh/jongh.github.io/blob/master/CHANGELOG.md" target="_blank" rel="noopener noreferrer">변경 이력</a>에서 볼 수 있습니다.</p>
       <div class="grid">
 
         <article class="card fade-in">
@@ -324,7 +324,7 @@
           <h3>역할 분업</h3>
           <p class="def">여러 AI 에이전트 또는 페르소나에 역할을 배분하고 각각의 출력을 하나의 결과물로 통합합니다.</p>
           <p class="evidence">디지털트윈 개발에서는 아키텍처 설계, 코드 초안, 코드 리뷰를 각각 다른 역할로 나눠 AI와 진행합니다. 혼자 일해도 여러 전문가의 시선을 거친 결과물이 나옵니다.</p>
-          <p class="evidence evidence--self"><strong>이 저장소에서의 실증:</strong> 설계(Architect)·카피(Writer)·구현(Implementer)·검토(Reviewer)를 각각 다른 역할로 두고, 단계마다 그 역할의 결과만 모아 합쳤습니다.</p>
+          <p class="evidence evidence--self"><strong>이 저장소에서의 실증:</strong> 설계·카피·구현·검토 역할을 나누고, 서로 기대지 않는 작업은 동시에 맡긴 뒤 돌아온 결과를 하나로 통합했습니다.</p>
           <p class="effect">한 사람, 한 모델의 시야에 갇히지 않고 서로 다른 관점이 하나의 결과로 모입니다.</p>
         </article>
 
@@ -333,7 +333,7 @@
           <h3>검증·승인 게이트</h3>
           <p class="def">AI 출력물이 다음 단계로 넘어가기 전 사람의 판단이 개입하는 체크포인트를 설계합니다.</p>
           <p class="evidence">가상 훈련 시뮬레이터를 만들 때는 실시간 서버, WAS, 업데이트 모듈을 따로따로 검증한 다음에야 합치도록 단계를 끊었습니다. 그래서 배포 전에 문제를 각 층에서 미리 잡아낼 수 있었습니다.</p>
-          <p class="evidence evidence--self"><strong>이 저장소에서의 실증:</strong> 구현·검토 중에는 변경을 확정하지 않고, 사람이 한 번 확인한 뒤에만 반영하도록 했습니다. 실제로 공개 노출 위험도 승인을 받고 나서야 손봤습니다.</p>
+          <p class="evidence evidence--self"><strong>이 저장소에서의 실증:</strong> 변경은 사람이 승인한 뒤에만 반영됩니다. 첫 사이클 검토에서 "특정 도구 이름을 쓰지 않는다"는 원칙을 어긴 문구를 반영 전에 잡아 고쳤고, 이후 두 사이클 동안 같은 위반은 다시 나오지 않았습니다.</p>
           <p class="effect">문제가 쌓이기 전에 걸러내니, 나중에 통째로 다시 만드는 일이 줄어듭니다.</p>
         </article>
 
@@ -342,7 +342,7 @@
           <h3>검증 루프</h3>
           <p class="def">AI가 스스로 자신의 출력을 기준에 따라 반복적으로 검토하고 수정하는 프로세스를 설계합니다.</p>
           <p class="evidence">API 서버를 개발할 때는 AI가 만든 인터페이스 명세를 미리 정해둔 체크리스트로 스스로 다시 보게 했습니다. 사람이 직접 검토하는 횟수가 그만큼 줄었습니다.</p>
-          <p class="evidence evidence--self"><strong>이 저장소에서의 실증:</strong> 보편성·접근성 체크리스트를 미리 정해두고, 검토 단계에서 그 기준으로 계속 스스로 점검했습니다.</p>
+          <p class="evidence evidence--self"><strong>이 저장소에서의 실증:</strong> 동시에 맡긴 작업 중 한 배경의 색 대비가 기준에 못 미친 결과를 완료 기준으로 다시 재서 바로잡았습니다. 지난 검토가 짚은 대상도 다음 사이클을 계획하며 다시 재 보니 엉뚱한 곳이어서, 실제 문제를 찾아 고쳤습니다.</p>
           <p class="effect">사람이 일일이 보지 않아도 일정 수준의 품질이 먼저 걸러집니다.</p>
         </article>
 
@@ -351,7 +351,7 @@
           <h3>의사결정 기록</h3>
           <p class="def">AI와의 협업 과정에서 내려진 판단 근거를 구조화된 형태로 추적하고 보존합니다.</p>
           <p class="evidence">MSA 아키텍처를 설계할 때는 구조를 어떻게 정했고 왜 그랬는지를 기록으로 남겼습니다. 같은 논의를 다시 하지 않아도 됐고, 새로 합류한 사람도 맥락을 금방 따라왔습니다.</p>
-          <p class="evidence evidence--self"><strong>이 저장소에서의 실증:</strong> 무언가 정할 때마다 그 근거를 결정 테이블과 <code>docs/conventions.md</code>에 바로 적어둬서, 나중에 같은 고민을 반복하지 않았습니다.</p>
+          <p class="evidence evidence--self"><strong>이 저장소에서의 실증:</strong> 정할 때마다 근거를 결정 테이블과 <code>docs/conventions.md</code>에 적고, 사이클을 몇 번 돌 때마다 회고 문서에 반복된 문제를 모으고 남은 일은 표로 추적했습니다. 같은 고민을 되풀이하지 않았고, 남은 일은 다음 계획에 그대로 넘어갔습니다.</p>
           <p class="effect">비슷한 문제가 또 생겨도 그때의 판단 과정을 그대로 되짚거나, 원인을 빠르게 찾을 수 있습니다.</p>
         </article>
 
@@ -374,7 +374,7 @@
   <section id="workflow">
     <div class="container container--wide">
       <h2 class="section-heading">AI 협업 방식</h2>
-      <p class="section-sub">앞의 7가지는 따로 노는 원칙이 아닙니다. 실제로는 아래 네 단계로 맞물려 돌아갑니다. 이 페이지도 그 순서대로 설계하고, 구현하고, 검토하고, 기록했습니다.</p>
+      <p class="section-sub">앞의 7가지는 따로 노는 원칙이 아닙니다. 실제로는 아래 네 단계로 맞물려 돌고, 마지막 회고가 다시 다음 설계로 이어집니다. 이 페이지도 이 고리를 여러 번 돌며 다듬었습니다.</p>
 
       <div class="workflow-grid">
 
@@ -393,21 +393,9 @@
         <article class="workflow-card fade-in">
           <span class="num">02</span>
           <h3>구현</h3>
-          <p class="workflow-desc">역할을 나눈 AI와 함께, 다시 쓸 수 있는 자산을 남기며 결과물을 만듭니다. 이때는 변경을 아직 확정하지 않고 만들기와 검증에만 집중합니다.</p>
+          <p class="workflow-desc">역할을 나눈 AI와 함께 결과물을 만듭니다. 나눠 맡긴 결과는 그대로 합치지 않고, 미리 정한 완료 기준에 비춰 다시 확인한 뒤에 합칩니다. 이 단계에서는 아직 아무것도 확정하지 않습니다.</p>
           <ul class="workflow-tags">
             <li>역할 분업</li>
-            <li>재사용 자산화</li>
-          </ul>
-        </article>
-
-        <span class="workflow-arrow" aria-hidden="true">→</span>
-
-        <article class="workflow-card fade-in">
-          <span class="num">03</span>
-          <h3>검토</h3>
-          <p class="workflow-desc">사람이 확인하는 승인 단계와 AI의 자기 점검을 겹쳐 품질을 두 번 거릅니다. 이 관문을 통과한 변경만 다음으로 넘어가, 문제가 쌓이기 전에 걸러집니다.</p>
-          <ul class="workflow-tags">
-            <li>검증·승인 게이트</li>
             <li>검증 루프</li>
           </ul>
         </article>
@@ -415,14 +403,31 @@
         <span class="workflow-arrow" aria-hidden="true">→</span>
 
         <article class="workflow-card fade-in">
-          <span class="num">04</span>
-          <h3>기록</h3>
-          <p class="workflow-desc">협업하며 내린 판단의 근거를 정리해 남기고, 다음 일의 출발점으로 삼습니다. 결정과 규약을 기준 문서로 남겨 두면 다음 사이클이 맥락을 그대로 이어받습니다.</p>
+          <span class="num">03</span>
+          <h3>검토·승인</h3>
+          <p class="workflow-desc">비판적인 검토가 결과물을 따져 보고 반영해도 되는지 판정을 냅니다. 그 판정을 사람이 확인하고 승인한 뒤에만 변경이 확정되고 배포됩니다.</p>
           <ul class="workflow-tags">
-            <li>의사결정 기록</li>
+            <li>검증·승인 게이트</li>
           </ul>
         </article>
 
+        <span class="workflow-arrow" aria-hidden="true">→</span>
+
+        <article class="workflow-card fade-in">
+          <span class="num">04</span>
+          <h3>기록·회고</h3>
+          <p class="workflow-desc">내린 판단의 근거와 규약을 기준 문서로 남기고, 여러 사이클을 돌아보며 반복된 문제와 남은 일을 추립니다. 이 기록과 규약은 다음 사이클이 그대로 가져다 씁니다.</p>
+          <ul class="workflow-tags">
+            <li>의사결정 기록</li>
+            <li>재사용 자산화</li>
+          </ul>
+        </article>
+
+      </div>
+
+      <div class="workflow-loop fade-in">
+        <span class="workflow-loop-icon" aria-hidden="true">↺</span>
+        <p><strong>회고는 다시 설계로 이어집니다.</strong> 회고에서 추린 남은 일은 다음 사이클의 출발점이 됩니다. 예를 들어 색 대비 문제가 세 사이클 연속 뒤늦게 발견되자, 그때그때 고치는 대신 색을 바꿀 때마다 대비부터 재는 사전 점검 규칙으로 올렸습니다.</p>
       </div>
     </div>
   </section>

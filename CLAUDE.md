@@ -58,13 +58,19 @@ style.css         ← 베이지 테마, 반응형, 애니메이션
 main.js           ← IntersectionObserver 스크롤 fade-in
 favicon.png       ← 프로필 얼굴 크롭 파비콘 (180×180)
 .nojekyll         ← Jekyll 빌드 비활성화
-.gitignore        ← .docs/ 폴더 제외
+.gitignore        ← .docs/ · .claude/ · .tide/phase · docs/milestones/ · docs/reports/ · 에디터/OS 파일 제외
 CLAUDE.md         ← 이 파일 (프로젝트 컨텍스트)
 README.md         ← 저장소 소개
+CHANGELOG.md      ← 릴리즈 노트 (공개)
 docs/
   ia-spec.md      ← IA 설계 명세서 v1 (Architect 산출물)
   ia-spec-v2.md   ← IA 설계 명세서 v2 (Phase 2, Architect 산출물)
   copy-draft.md   ← 카피 초안 v1 (Writer 산출물)
+  conventions.md  ← 개발 사이클 규약
+  project-context.md ← 구조 문서
+  milestones/     ← 사이클 산출물 — 마일스톤 문서 (.gitignore, 비공개)
+  reports/        ← 사이클 산출물 — 완료·리뷰 보고서 (.gitignore, 비공개)
+.tide/            ← 개발 사이클 로컬 상태 (phase는 .gitignore)
 .docs/            ← 내부 작업 문서 (.gitignore로 커밋 제외)
   milestone.md    ← 포트폴리오 리뉴얼 마일스톤 계획
   content-template.md ← 콘텐츠 입력 템플릿 (Writer 산출물)
@@ -94,14 +100,26 @@ assets/resume/
 
 | 마일스톤 | 내용 | 상태 |
 |----------|------|------|
-| M1 | 🏛️ 구조 재설계 — IA 업데이트 (`docs/ia-spec-v2.md`) | ✅ 완료 · 승인 대기 |
-| M2 | ✍️ 콘텐츠 템플릿 제작 (`.docs/content-template.md`) | ✅ 완료 · 승인 대기 |
-| M3 | 🔨 베이지 테마 구현 (`style.css` 전면 교체) | ✅ 완료 · 승인 대기 |
-| M4 | 🔨 페이지 구조 구현 (`index.html` 7개 섹션) | ✅ 완료 · 승인 대기 |
-| M5 | ✍️ 사용자 콘텐츠 입력 및 카피 완성 | ✅ 완료 (자기소개·이력·프로젝트·실증 입력 완료) |
-| M6 | 🔍 검토 및 배포 | 🔄 검토 완료·수정 반영 / 배포 대기 |
+| P2-M1 | 🏛️ 구조 재설계 — IA 업데이트 (`docs/ia-spec-v2.md`) | ✅ 완료 · 배포됨 |
+| P2-M2 | ✍️ 콘텐츠 템플릿 제작 (`.docs/content-template.md`) | ✅ 완료 · 배포됨 |
+| P2-M3 | 🔨 베이지 테마 구현 (`style.css` 전면 교체) | ✅ 완료 · 배포됨 |
+| P2-M4 | 🔨 페이지 구조 구현 (`index.html` 7개 섹션) | ✅ 완료 · 배포됨 |
+| P2-M5 | ✍️ 사용자 콘텐츠 입력 및 카피 완성 | ✅ 완료 · 배포됨 (자기소개·이력·프로젝트·실증 입력 완료) |
+| P2-M6 | 🔍 검토 및 배포 | ✅ 완료 · 배포됨 |
 
+> Phase 2 번호는 `P2-` 접두로 개발 사이클(Phase 3) 번호와 구분한다.
 > 상세 계획: `.docs/milestone.md`
+
+## 진행 상태 — 개발 사이클 (Phase 3)
+
+| 마일스톤 | 내용 | 버전 | 상태 |
+|----------|------|------|------|
+| M1 | AI 방법론·협업 방식 섹션 자기참조 실증 강화 + 개발 사이클 골격 | v0.1.0 | ✅ 릴리즈 |
+| M2 | 카드 본문 색 대비 정정 + 카피 원본 문서 동기화 | v0.1.1 | ✅ 릴리즈 |
+| M3 | 전역 보조 텍스트 색 대비 정정 + 카피 문서 역할 명문화 | v0.1.2 | ✅ 릴리즈 |
+| M4 | 협업 방식 순환 구조화 + 사이클 실측 근거로 실증 교체 | v0.2.0 | ✅ 릴리즈 |
+
+> 사이클 상세의 단일 원본은 `docs/milestones/`·`docs/reports/`(비공개)와 `CHANGELOG.md`(공개)다. 이 표는 색인이다.
 
 ---
 
@@ -142,8 +160,10 @@ assets/resume/
 | OG 썸네일 | 전용 카드(`og-card.png`, 1200×630) 생성 → og:image 교체, twitter:card=summary_large_image |
 | #ai-strengths·#workflow 자기참조 실증 | 두 섹션의 실증을 이 저장소의 AI 개발 사이클로 자기참조 보강. 특정 도구/제품명은 미표기, 방법론 관점으로만 추상화 (2026-06-15) |
 | 카피 SSOT 역할 | 배포 카피의 사실상 SSOT는 index.html. docs/copy-draft.md는 릴리즈 시점 스냅샷으로, 드리프트는 버그가 아니라 스냅샷 시점 차이. 릴리즈 단계에서 필요 시 동기화 (2026-06-15) |
+| 상태 표 일원화 | Phase 2 마일스톤 번호에 `P2-` 접두를 붙여 개발 사이클 번호와 구분. 사이클 진행은 Phase 3 표가 색인, 상세는 docs/milestones·reports·CHANGELOG가 원본 (2026-10-16) |
+| 색 대비 사전 게이트 | 새 텍스트 색·배경 조합은 표준 배경 3종 위 대비비를 마일스톤/impl 보고서에 수치로 명시 — 규칙은 `docs/conventions.md` "색 대비 사전 게이트" 절 (2026-10-16) |
 
-## 콘텐츠 입력 형식 (M5 진행 시)
+## 콘텐츠 입력 형식 (P2-M5 진행 시)
 
 ### About (자기소개)
 ```
